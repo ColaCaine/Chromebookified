@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Menu</title>
+    <style>
+      body, html {
+        text-align: center;
+      }
+      html {
+        background-color:rgb(5, 0, 36);
+      }
+      #time {
+            position: fixed;
+            top: 10px;
+            right: 19px;
+            font-family: sans-serif;
+            font-size: 16px;
+            color: white;
+            background-color: purple
+        }
+        .timeBackground {
+          background-color: purple;
+          position: fixed;
+          top: 7.45px;
+          right: 10px;
+          height: 25px;
+          width: 100px;
+          border-radius: 10px;
+        }
+        .mailto {
+          position: fixed;
+          font-family: sans-serif;
+          top: 610px;
+          right: 100;
+        }
+      </style>
+  </head>
+  <body>
+    <pre> </pre>
+    <button style="background-color: rgb(48, 48, 48); width:100%; color: yellow; font-size:35px; font-family:Times New Roman;" onclick="redirectFunction()"><i><i>EmuOS</i></i></button>
+      <button style="background-color: rgb(48, 48, 48); width:100%; color: white; font-size:35px; font-family:Times New Roman;" onclick="redirectFunction2()"><i>The Wagon Site</i></button>
+      <button style="background-color: rgb(48, 48, 48); width:100%; color: lime; font-size:35px; font-family:Times New Roman;" onclick="redirectFunction3()"><i>GeForce NOW</i></button>
+      <button style="background-color: rgb(48, 48, 48); width:100%; color: limegreen; font-size:35px; font-family:Times New Roman;" onclick="redirectFunction4()"><i>GeForce NOW-alt</i></button>
+      <button style="background-color: rgb(48, 48, 48); width:100%; color: purple; text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; font-size:35px; font-family:Times New Roman;" onclick="redirectFunction5()"><i>Interstellar Proxy</i></button>
+      <div class="button timeBackground"></div>
+<div id="time"></div>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const time = now.toLocaleTimeString();
+            document.getElementById("time").textContent = time;
+            setTimeout(updateTime, 1000); // Update every second
+        }
+        updateTime(); // Initial update
+    </script>
+   <script>
+   function redirectFunction() {
+    window.location.href = 'emuos.html'
+   }
+   function redirectFunction2() {
+    window.location.href = 'wagonization.html'
+   }
+   function redirectFunction3() {
+    window.location.href = 'geforce.html'
+   }
+   function redirectFunction4() {
+    window.location.href = 'geforce-alt.html'
+   }
+   function redirectFunction5() {
+    window.location.href = 'prxy.html'
+   }
+    </script>
+    <div class="href mailto">
+    <a style="color:white" href="mailto:createchivty@gmail.com">Contact me via email.</a>
+    </div>
+
+  </body>
+</html>
